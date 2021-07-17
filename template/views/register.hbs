@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{>nav}}
+    <form action="/register" method="POST">
+    <div class="form-group">
+        <input type="text" class="form-group" name="firstname" value="" required placeholder="First Name" />
+    </div>
+     <div class="form-group">
+        <input type="text" class="form-group" name="lastname" value="" required placeholder="Last Name" />
+    </div>
+
+     <div class="form-group">
+        <input type="email" class="form-group" name="email" value="" required placeholder="Email" />
+    </div>
+
+    <div class="form-group" >
+        <label class="radio inline">
+            <input type="radio" name="gender" value="male" checked>
+            <span>Male</span>
+        </label>
+         <label class="radio inline">
+            <input type="radio" name="gender" value="female" >
+            <span>Female</span>
+        </label>
+    </div>
+
+    <div class="form-group">
+        <input type="text" minlength="10" maxlength="10" class="form-group" name="phone" value="" required placeholder="Phone " />
+    </div>
+
+<div class="form-group">
+        <input type="text" class="form-group" name="age" value="" placeholder="Enter your age  *" required />
+    </div>
+   
+
+    <div class="form-group">
+        <input type="password" required class="form-group" name="password" value=""  placeholder="Password *"  />
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-group" name="confirmpassword" value="" placeholder=" Confirm Password *" required />
+    </div>
+
+    <div class="form-group">
+        <input type="submit" class="btnRegister" value="Register" />
+    </div>
+
+    </form>
+    {{>footer}}
+</body>
+</html>
